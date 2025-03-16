@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lazarus Showcase App Suite</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container my-5">
+  <div class="text-center mb-4">
+    <h1 class="display-5">🎯 Lazarus Showcase App Suite</h1>
+    <p class="lead">A goldmine of demos for every command and component in Lazarus / Free Pascal.</p>
+  </div>
+
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">General Design Approach</h5>
+      <ul>
+        <li><strong>Launcher App:</strong> Categorized GUI with descriptions and launch buttons for each demo.</li>
+        <li>Each demo is a small, self-contained project or unit with heavily commented code.</li>
+        <li>Outputs to <code>TMemo</code>, <code>TLabel</code>, <code>ShowMessage</code>, or log windows.</li>
+        <li>Includes edge cases and misuse examples.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Language Basics -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🔤 Language Basics</h5>
+      <ul>
+        <li><code>if</code>, <code>case</code>, <code>for</code>, <code>while</code>, <code>repeat</code></li>
+        <li><code>begin..end</code>, <code>with</code>, <code>try..except</code>, <code>try..finally</code></li>
+        <li><code>procedure</code>, <code>function</code>, <code>exit</code>, <code>break</code>, <code>continue</code></li>
+        <li><code>record</code>, <code>array</code>, <code>set</code>, <code>file</code>, <code>packed</code></li>
+        <li><code>unit</code>, <code>interface</code>, <code>implementation</code>, <code>uses</code></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Data Types -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">📐 Data Types</h5>
+      <ul>
+        <li><code>integer</code>, <code>real</code>, <code>double</code>, <code>string</code>, <code>char</code>, <code>boolean</code>, <code>variant</code></li>
+        <li><code>const</code>, <code>var</code>, <code>type</code>, <code>enum</code>, <code>pointer</code></li>
+        <li><code>nil</code>, <code>new</code>, <code>dispose</code></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- OOP -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">👨‍🏫 Object-Oriented Pascal</h5>
+      <ul>
+        <li><code>class</code>, <code>object</code>, <code>constructor</code>, <code>destructor</code></li>
+        <li><code>inherited</code>, <code>override</code>, <code>virtual</code>, <code>dynamic</code>, <code>abstract</code></li>
+        <li><code>property</code>, <code>private</code>, <code>public</code>, <code>published</code>, <code>protected</code></li>
+        <li><code>self</code>, <code>as</code>, <code>is</code></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Lazarus Components -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🎛️ Lazarus Components</h5>
+      <ul>
+        <li>Basic UI: <code>TButton</code>, <code>TLabel</code>, <code>TEdit</code>, <code>TMemo</code>, etc.</li>
+        <li>Dialogs: <code>TOpenDialog</code>, <code>TSaveDialog</code></li>
+        <li>Timers: <code>TTimer</code> blinking label</li>
+        <li>Graphics: <code>TImage</code>, <code>TCanvas</code></li>
+        <li>Grids: <code>TStringGrid</code>, <code>TDrawGrid</code>, <code>TPaintBox</code></li>
+        <li>Menus: <code>TMainMenu</code>, <code>TPopupMenu</code></li>
+        <li>Input: <code>TCheckBox</code>, <code>TRadioButton</code>, <code>TGroupBox</code></li>
+        <li>Text Editor: <code>TSynEdit</code> or styled <code>TMemo</code></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Math & Logic -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🧮 Math & Logical Ops</h5>
+      <ul>
+        <li><code>mod</code>, <code>div</code>, <code>not</code>, <code>and</code>, <code>or</code>, <code>xor</code>, <code>shl</code>, <code>shr</code></li>
+        <li>Functions: <code>abs</code>, <code>sqr</code>, <code>sqrt</code>, <code>round</code>, <code>trunc</code>, <code>sin</code>, <code>cos</code>, <code>random</code></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Memory -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🔄 Memory & Pointers</h5>
+      <ul>
+        <li>Dynamic arrays</li>
+        <li>Linked list with pointers</li>
+        <li><code>getmem</code>, <code>freemem</code></li>
+        <li>Typecasting pointers</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- File & Streams -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">📁 File & Streams</h5>
+      <ul>
+        <li>Text files: <code>AssignFile</code>, <code>Rewrite</code>, <code>Reset</code>, <code>Readln</code>, <code>Writeln</code></li>
+        <li>Binary file demo</li>
+        <li><code>TFileStream</code>, <code>TMemoryStream</code> usage</li>
+        <li>Basic logger writing to file</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- System Interaction -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🌐 System & OS Interaction</h5>
+      <ul>
+        <li><code>SysUtils</code>, <code>DateUtils</code>, <code>FileUtil</code>, <code>StrUtils</code></li>
+        <li>Get system time, uptime, username, env vars</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Communication -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">📞 Inter-process / External Communication</h5>
+      <ul>
+        <li><code>TProcess</code>: run external programs, capture output</li>
+        <li>Serial communication (using <code>Serial</code> unit)</li>
+        <li>Pipe-based IPC (advanced)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Dialogs -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">💬 Dialogs & Forms</h5>
+      <ul>
+        <li><code>ShowMessage</code>, <code>MessageDlg</code></li>
+        <li>Custom modal dialogs</li>
+        <li>Confirmation & input forms</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Error Handling -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🐛 Error Handling</h5>
+      <ul>
+        <li>Demo division by zero inside <code>try..except</code></li>
+        <li>Handle "file not found" errors</li>
+        <li>Use of custom exception classes</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bonus -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">🔗 Advanced / Bonus</h5>
+      <ul>
+        <li>Use of <code>generics</code></li>
+        <li>Threads and <code>synchronize</code> demo</li>
+        <li>Component event handlers</li>
+        <li>Drag & drop support</li>
+        <li>Resource strings and i18n basics</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
